@@ -38,7 +38,7 @@ var one_day = 1000 * 60 * 60 * 24
 var present_date = new Date();
 var countdown_day = new Date(present_date.getFullYear(), 8, 17) 
 
-// To Calculate next year's Christmas if passed already. 
+//Calculates if the date has already passes, and if so then adds a year. Can be done better but hey 
 if (present_date.getMonth() == 8 && present_date.getdate() > 17) 
     countdown_day.setFullYear(countdown_day.getFullYear() + 1) 
   
