@@ -1,4 +1,4 @@
-# CP77Cntdn
+# Cyberpunk 2077 Countdown
 Cyberpunk 2077 countdown bot
 ===================================
 
