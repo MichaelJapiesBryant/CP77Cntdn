@@ -36,10 +36,10 @@ var listener = app.listen(process.env.PORT, function(){
 var one_day = 1000 * 60 * 60 * 24 
 //The date here is the date that you want to have the bot count down to.
 var present_date = new Date();
-var countdown_day = new Date(present_date.getFullYear(), 2, 20) 
+var countdown_day = new Date(present_date.getFullYear(), 8, 17) 
 
 //Calculates if the date has already passes, and if so then adds a year. Can be done better but hey 
-if (present_date.getMonth() == 2 && present_date.getdate() > 20) 
+if (present_date.getMonth() == 8 && present_date.getdate() > 17) 
     countdown_day.setFullYear(countdown_day.getFullYear() + 1) 
   
 // To Calculate the result in milliseconds and then converting into days 
@@ -53,17 +53,17 @@ function countdownMessage() {
   
   var status = '';
   
-   if(Final_Result > 0)  //Start of the  caltulation for the date. Syntax for the message can be changed here. 
+  if(Final_Result > 0)  //Start of the  caltulation for the date. Syntax for the message can be changed here. 
 {
 
-	status += 'There are ' + Final_Result +  ' days left until the release of #DOOM #DoomEternal';
+	status += 'There are ' + Final_Result +  ' days left until the release of #Cyberpunk2077 #CP2077 #2077';
 }
 else
 {
  //Final status
-    status += 'Doom Eternal Releases today!';
+    status += 'Wake up samurai. #Cyberpunk2077 releases today!';
 }
   
-  return status;
+return status;
   
 };
